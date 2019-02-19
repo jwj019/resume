@@ -18,4 +18,4 @@ jobs:
             mv examples/resume.pdf ~/results
             mv examples/coverletter.pdf ~/results
       - store_artifacts:
-path: ~/results
+path: /tmp/pdfs
