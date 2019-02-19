@@ -18,4 +18,4 @@ jobs:
             mv examples/resume.pdf /tmp/pdfs
             mv examples/coverletter.pdf /tmp/pdfs
       - store_artifacts:
-path: /tmp/pdfs
+          path: /tmp/pdfs
