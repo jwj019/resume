@@ -1,11 +1,19 @@
 .PHONY: documents
 
+default: documents
+
 CC = xelatex
 documents_DIR = documents
 RESUME_DIR = documents/resume
 # CV_DIR = documents/cv
 RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
 # CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
+
+SPELLCHECK_FILES=documents/resume/*.tex \
+	documents/*.tex
+
+ALL_TEX=$(SPELLCHECK_FILES) \
+		*.tex
 
 documents: $(foreach x, coverletter resume, $x.pdf)
 
@@ -20,3 +28,9 @@ coverletter.pdf: $(documents_DIR)/coverletter.tex
 
 clean:
 	rm -rf $(documents_DIR)/*.pdf
+
+spellcheck:
+	@for t in $(SPELLCHECK_FILES); \
+	do \
+		aspell --mode=tex --tex-check-comments --personal "./dictionary/wordlist.txt" check "$${t}"; \
+done;
