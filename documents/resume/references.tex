@@ -1,0 +1,69 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{References}
+
+\newcommand{\cvdoublecolumn}[2]{%
+    \begin{minipage}[t]{{.45\linewidth}}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{{.45\linewidth}}#2\end{minipage}%
+}
+
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\faEnvelope\acvHeaderIconSep~\texttt{#6}\newline}%
+    \ifthenelse{\equal{#7}{}}{}{#7}}
+
+
+  {\cvreference{Gabriel Moreno}
+    {Test Automation / Performance Test Engineer}
+    {VariQ Corporation}
+    {8049 Gabriels Ct}
+    {Jessup, MD 20794}
+    {gmoreno7289@gmail.com}
+    {443-936-9414}%
+  }
+  \newline
+  \newline
+  {\cvreference{Jacob Siegel}
+    {DevOps Engineer}
+    {VariQ Corporation}
+    {12828 Meadow View Dr}
+    {Gaithersburg MD 20878}
+    {JacobHSiegel@gmail.com}
+    {301-519-0315}%
+  }
+  \newline
+  \newline
+  {\cvreference{Nelson Rothermel}
+    {Systems Architect}
+    {VariQ Corporation}
+    {21635 New Hampshire Ave}
+    {Brookeville MD 20833}
+    {nelsonr@gmail.com}
+    {301-288-1250}%
+  }
+
+% \begin{cventries}
+% %-------------------------------------------------------------------------------
+% %	CONTENT
+% %-------------------------------------------------------------------------------
+%   \recipient
+%     {Nelson Rothermel}
+%     {(555)555-5555\\Email\\Street\\City/ZIP}
+%
+%   \recipient
+%     {Gabriel Moreno}
+%     {(555)555-5555\\Email\\Street\\City/ZIP}
+%
+%   \recipient
+%     {Jacob Siegel}
+%     {(555)555-5555\\Email\\Street\\City/ZIP}
+%
+%
+% %---------------------------------------------------------
+% \end{cventries}
