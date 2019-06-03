@@ -15,9 +15,9 @@ Amphitheatre
 Curabitur
 tincidunt
 mauris
-dhs
-AWS
 ECS
+AWS
+dhs
 tex
 arcu
 justo
@@ -57,8 +57,8 @@ Architected
 backend
 Dynatrace
 gil
-iac
 IaC
+iac
 blandit
 Bangbae
 Uncomment
@@ -171,9 +171,9 @@ functionalities
 metus
 nisl
 inceptos
-gitlab
 GitHub
 Github
+gitlab
 mattis
 ipsum
 Aliquam
@@ -183,8 +183,8 @@ Aenean
 RHEL
 LastName
 lastname
-oss
 RDS
+oss
 Ruston
 nulla
 Germantown
