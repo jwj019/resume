@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  LaTeX template for your outstanding job application TEST COMMIT
+  Fork of <a href="https://github.com/posquit0/Awesome-CV" title="AwesomeCV">
 </p>
 
 <div align="center">
