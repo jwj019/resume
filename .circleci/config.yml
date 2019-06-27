@@ -14,6 +14,7 @@ jobs:
           name: Move artifacts
           command: |
             cp documents/resume.pdf /tmp/resume.pdf
+            cp documents/references.pdf /tmp/references.pdf
             cp documents/coverletter.pdf /tmp/coverletter.pdf
       - store_artifacts:
           path: /tmp
