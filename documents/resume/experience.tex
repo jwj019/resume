@@ -15,20 +15,18 @@
     {VariQ Corporation} % Organization
     {Rockville, MD} % Location
     {Apr. 2015 - Present} % Date(s)
-    {DevOps engineer working on federal contract for maintaining legacy USCIS verification applications E-Verify and SAVE. Core responsibilities include build automation via Jenkins, environment maintenance in Amazon Web Services, and managing code deployments.} % Description of position
+    {DevOps engineer working on USCIS verification applications such as E-Verify and SAVE. Core responsibilities include build automation via Jenkins, infrastructure automation in Amazon Web Services, and managing code deployments.} % Description of position
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         % \item {Collaborated on software development documentation in LaTeX}
         % \item {Experience working in Kanban style workflow}
+        \item {Architected and implemented CI/CD pipeline which is capable of creating AWS networks and servers, compiling and testing JHipster-based Java and Angular microservices, building Docker images, and deploying to 3 different stacks within 20 minutes}
         \item {Planned and implemented blue/green deployment processes for 5 different environments}
         \item {Performed log analysis to troubleshoot issues using a combination of Splunk, New Relic, Cloudwatch, and custom Oracle database logging}
-        \item {Provisioned AWS stacks using cloudformation, demonstrating infrastructure-as-code principles}
-        \item {Worked as part of a team to develop a CI/CD pipeline to deploy Consul/Vault into AWS}
-        \item {Assisted with integrating Consul/Vault into legacy application}
+        \item {Developed a CI/CD pipeline to deploy Consul/Vault services into AWS and integrated them into legacy application}
         % \item {Architected CI/CD platform using OpenShift}
         % \item {Experience with configuring and scanning source code with SonarQube}
-        \item {Advised on corporate business development efforts for at least 7 federal contract proposals}
-        \item {Architected AWS ECS based cloud platform which deploys JHipster microservice environments within 20 minutes}
+        \item {Advised on corporate business development efforts regarding devOps best practices for at least 7 federal contract proposals}
         \item {Developed CI/CD pipeline for use in tech demos using a series of tests and quality gates which pushes codes through dev, test, and prod in 15 minutes}
         % \item {Created and configured Jenkins servers to migrate code deployments out of Team Foundation Server}
         % \item {Created CI/CD pipeline using various Jenkins builds and plugins}
@@ -37,13 +35,20 @@
         % \item {Utilized Scrum development practices using two week sprints}
         % \item {Maintained public C\# and Oracle applications used by millions of user}
         \item {Actively managed, improved, and monitored cloud infrastructure on AWS, EC2, S3, and RDS, including backups, patches, and autoscaling}
-        \item {Spearheaded effort to migrate server infrastructure out of legacy DHS data center in Amazon Webservices}
+        \item {Led effort to migrate server infrastructure out of legacy DHS data center in Amazon Webservices}
+        \begin{itemize}
+          \item {Documented steps to create and configure servers and services}
+          \item {Planned phases for getting the migration into through various testing environments and finally into production}
+          \item {Wrote Cloudformation templates to automate server infrastructure}
+          \item {Wrote Chef cookbooks to automate server configuration}
+          \item {Created pipeline steps to run automation tests and verify that services were working correctly}
+        \end{itemize}
         \item {Built and deployed Docker containers to deploy microservice architecture which improved developer workflow and increased scalability}
+        \item {Scripted process for Docker containers to get secrets such as passwords and certificates based on AWS tags}
         \item {Reduced downtime required for deployments from 8 hours to 30 minutes}
-        \item {Modernized Jenkins jobs to utilize Jenkins pipeline and JobDSL so that deployments could be source controlled in Git}
-        \item {Planned and executed source code repository migration from Team Foundation Server to Github}
-        \item {Managed nearly a dozen GitHub repositories and permissions}
-        \item {Drove strategy for migrating from Team Foundation Server to GitHub including branching, merging, and tagging}
+        \item {Rearchitected Jenkins deployments away from manually maintained jobs and rewrote them to utilize Jenkins pipeline and JobDSL so that deployments could be source controlled in Git}
+        \item {Planned and executed strategy for migrating from Team Foundation Server to GitHub including branching, merging, and tagging}
+        \item {Managed nearly a dozen GitHub repositories and user/group permissions}
       \end{cvitems}
     }
 
