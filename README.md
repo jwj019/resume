@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  Fork of <a href="https://github.com/posquit0/Awesome-CV" title="AwesomeCV">
+  Fork of <a href="https://github.com/posquit0/Awesome-CV" title="AwesomeCV">AwesomeCV</a>
 </p>
 
 <div align="center">
