@@ -13,7 +13,8 @@ jobs:
       - run:
           name: Move artifacts
           command: |
-            mv documents/resume.pdf /tmp/pdfs
-            mv documents/coverletter.pdf /tmp/pdfs
+            cp documents/resume.pdf /tmp/resume.pdf
+            cp documents/references.pdf /tmp/references.pdf
+            cp documents/coverletter.pdf /tmp/coverletter.pdf
       - store_artifacts:
-          path: /tmp/pdfs
+          path: /tmp
