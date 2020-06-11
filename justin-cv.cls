@@ -180,6 +180,7 @@
 \newcommand*{\entrydatestyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1.1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\liststyle}{{\fontsize{9pt}{1.1em}\bodyfontlight\upshape\color{text}}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -484,8 +485,8 @@
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\subdescriptionstyle{#5}} \\
-    \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#6}}
   \end{tabular*}%
+  {\descriptionstyle{#6}}
 }
 
 % Define an environment for cvsubentry
@@ -493,19 +494,6 @@
   \begin{center}
 }{%
   \end{center}
-}
-
-% Define an environment for cvitems(for cventry)
-\newenvironment{cvitems}{%
-  \vspace{-4.0mm}
-  \begin{justify}
-  \begin{itemize}[leftmargin=6ex, rightmargin=4ex, nosep, noitemsep]
-    \setlength{\parskip}{0pt}
-    \renewcommand{\labelitemi}{\bullet}
-}{%
-  \end{itemize}
-  \end{justify}
-  \vspace{-4.0mm}
 }
 
 % Define an environment for cvhonor
@@ -544,7 +532,21 @@
 	\skilltypestyle{#1} & \skillsetstyle{#2} \\
 }
 
-%-------------------------------------------------------------------------------
+% Define an environment for cvitems(for cventry)
+\newenvironment{cvitems}{%
+  \vspace{-2.0mm}
+  \begin{justify}
+  \begin{itemize}[leftmargin=6ex, rightmargin=4ex, nosep, noitemsep]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{%
+  \end{itemize}
+  \end{justify}
+  \vspace{4.0mm}
+
+
+  
+}%-------------------------------------------------------------------------------
 %                Commands for elements of Cover Letter
 %-------------------------------------------------------------------------------
 % Define an environment for cvletter
