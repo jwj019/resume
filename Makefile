@@ -35,6 +35,9 @@ coverletter.pdf: $(documents_DIR)/coverletter.tex
 
 clean:
 	rm -rf $(documents_DIR)/*.pdf
+	rm -rf $(documents_DIR)/*.aux
+	rm -rf $(documents_DIR)/*.log
+	rm -rf $(documents_DIR)/*.out
 
 spellcheck:
 	@for t in $(SPELLCHECK_FILES); \

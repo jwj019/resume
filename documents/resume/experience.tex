@@ -10,7 +10,7 @@
 \begin{cventries}
 
 %---------------------------------------------------------
-  \cventrysix
+  \cventry
     {Lead DevOps Engineer} % Job title
     {VariQ Corporation} % Organization
     {Rockville, MD} % Location
@@ -18,27 +18,33 @@
     {DevOps engineer working on cloud migration for a set of DHS infrastructure applications known as the CISA Gateway. Previously worked on USCIS verification applications such as E-Verify and SAVE. Core responsibilities include build automation via Jenkins, infrastructure automation in Amazon Web Services, and managing code deployments.} % Description of position
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Utilized Terraform and Ansible to construct VPCs with associated routes tables, security groups, and other networking infrastructure}
-        \item {Used AWS Transit Gateway to connect and route traffic between separate AWS accounts and an on-premises network}
-        \item {Built Terraform templates to deploy Dockerized services for development support such as Nexus, Gitlab, and Nessus}
-        \item {Developed migration plan to migrate on-premises application to Amazon Web Services using Server Migration Service}
-        \item {Worked closely with security team to harden and secure servers and networks to achieve authority to operate in the cloud}
-        % \item {Collaborated on software development documentation in LaTeX}
-        % \item {Experience working in Kanban style workflow}
-        \item {Architected and implemented CI/CD pipeline which is capable of creating AWS networks and servers, compiling and testing JHipster-based Java and Angular microservices, building Docker images, and deploying to 3 different stacks within 20 minutes}
-        \item {Planned and implemented blue/green deployment processes for 5 different environments}
-        \item {Performed log analysis to troubleshoot issues using a combination of Splunk, New Relic, Cloudwatch, and custom Oracle database logging}
-        \item {Developed a CI/CD pipeline to deploy Consul/Vault services into AWS and integrated them into legacy application}
-        % \item {Architected CI/CD platform using OpenShift}
-        % \item {Experience with configuring and scanning source code with SonarQube}
-        \item {Advised on corporate business development efforts regarding devOps best practices for at least 7 federal contract proposals}
+        %%%%%% - CICD
+        \item {Designed and implemented CI/CD pipeline which is capable of creating AWS networks and servers, compiling and testing JHipster-based Java and Angular microservices, building Docker images, and deploying to 3 different stacks within 20 minutes}
         \item {Developed CI/CD pipeline for use in tech demos using a series of tests and quality gates which pushes codes through dev, test, and prod in 15 minutes}
-        % \item {Created and configured Jenkins servers to migrate code deployments out of Team Foundation Server}
+        \item {Designed and implemented blue/green deployment processes for 5 different environments}
+        \item {Developed a CI/CD pipeline to deploy Consul/Vault services into AWS and integrated them into legacy application}
         % \item {Created CI/CD pipeline using various Jenkins builds and plugins}
-        % \item {Assisted with Chef and Cloudformation scripts used for infrastructure as code}
-        % \item {Refactored build scripts and application configurations to use a single template instead of several disparate configs per environment}
-        % \item {Utilized Scrum development practices using two week sprints}
+        \item {Experience with configuring and scanning source code with SonarQube}
+        \item {Reduced downtime required for deployments from 8 hours to 30 minutes}
+        \item {Designed and implemented strategy for migrating from Team Foundation Server to GitHub including branching, merging, and tagging}
+        \item {Rearchitected Jenkins deployments away from manually maintained jobs and rewrote them to utilize Jenkins pipeline and JobDSL so that deployments could be source controlled in Git}
+        %%%%%% - IaC
+        \item {Utilized Terraform and Ansible to construct VPCs with associated routes tables, security groups, and other networking infrastructure}
+        \item {Built Terraform templates to deploy Dockerized services for development support tools such as Nexus, Gitlab, and Nessus}
+        \item {Architected CI/CD platform using OpenShift}
+        %%%%%% - Config Management
+        \item {Wrote Chef cookbooks used for hardening and configuration management of 10+ types of application servers}
+        \item {Refactored build scripts and application configurations to use a single template instead of several disparate configs per environment}
+        \item {Designed and implemented Docker containers to deploy microservice applications which improved developer workflow and increased scalability}
+        %%%%%% - Continuous Monitoring
+        \item {Performed log analysis to troubleshoot issues using a combination of Splunk, New Relic, Cloudwatch, and custom Oracle database logging}
+        \item {Created alarms for monitoring service health in Splunk, New Relic, and CloudWatch}
+        \item {Created alarms in Splunk for monitoring SSL certificate expiration}
         % \item {Maintained public C\# and Oracle applications used by millions of user}
+        %%%%%% - Cloud things
+        \item {Designed and implemented AWS Transit Gateway architecture to connect and route traffic between several AWS accounts and an on-premises network}
+        \item {Architected migration plan to migrate on-premises application to Amazon Web Services using Server Migration Service}
+        \item {Created and configured Jenkins servers as part of migrating code deployments out of Team Foundation Server}
         \item {Actively managed, improved, and monitored cloud infrastructure on AWS, EC2, S3, and RDS, including backups, patches, and autoscaling}
         \item {Led effort to migrate server infrastructure out of legacy DHS data center in Amazon Webservices}
         \begin{itemize}
@@ -48,17 +54,22 @@
           \item {Wrote Chef cookbooks to automate server configuration}
           \item {Created pipeline steps to run automation Selenium based automation tests and verify that services were working correctly}
         \end{itemize}
-        \item {Built and deployed Docker containers to deploy microservice architecture which improved developer workflow and increased scalability}
-        \item {Scripted process for Docker containers to get secrets such as passwords and certificates based on AWS tags}
-        \item {Reduced downtime required for deployments from 8 hours to 30 minutes}
-        \item {Rearchitected Jenkins deployments away from manually maintained jobs and rewrote them to utilize Jenkins pipeline and JobDSL so that deployments could be source controlled in Git}
-        \item {Planned and executed strategy for migrating from Team Foundation Server to GitHub including branching, merging, and tagging}
+        %%%%%% - Automation scripting
+        \item {Scripted process in Bash for Docker containers to get secrets such as passwords and certificates based on AWS tags}
+        %%%%%% - OS
+        %%%%%% - Process
+        % \item {Utilized Scrum development practices using two week sprints}
+        \item {Collaborated closely with security team to harden and secure servers and networks to achieve authority to operate in the cloud}
+        % \item {Experience working in Kanban style workflow}
+        %%%%%% - Soft Skills
+        \item {Collaborated on software development documentation in LaTeX}
+        \item {Advised on corporate business development efforts regarding devOps best practices for at least 10 federal contract proposals}
       \end{cvitems}
     }
 
 
 %---------------------------------------------------------
-  \cventrysix
+  \cventry
     {Lead Applications Developer} % Job title
     {Jacobs Technology} % Organization
     {Rockville, MD} % Location
@@ -76,7 +87,7 @@
     }
 
 %---------------------------------------------------------
-  \cventrysix
+  \cventry
     {System Administrator} % Job title
     {Loyola College Prep} % Organization
     {Shreveport, LA} % Location
