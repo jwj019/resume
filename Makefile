@@ -8,9 +8,9 @@ RESUME_DIR = documents/resume
 # CV_DIR = documents/cv
 RESUME_SRCS = $(shell find $(RESUME_DIR) -name '*.tex')
 
-REFERENCES_DIR = documents/references
+#REFERENCES_DIR = documents/references
 # CV_DIR = documents/cv
-REFERENCES_SRCS = $(shell find $(REFERENCES_DIR) -name '*.tex')
+#REFERENCES_SRCS = $(shell find $(REFERENCES_DIR) -name '*.tex')
 # CV_SRCS = $(shell find $(CV_DIR) -name '*.tex')
 
 SPELLCHECK_FILES=documents/resume/*.tex \
@@ -24,7 +24,7 @@ documents: $(foreach x, coverletter resume references, $x.pdf)
 resume.pdf: $(documents_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(documents_DIR) $<
 
-references.pdf: $(documents_DIR)/references.tex $(REFERENCES_SRCS)
+references.pdf: $(documents_DIR)/references.tex 
 	$(CC) -output-directory=$(documents_DIR) $<
 
 # cv.pdf: $(documents_DIR)/cv.tex $(CV_SRCS)
