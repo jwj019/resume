@@ -17,3 +17,8 @@ jobs:
 
     - name: Compile
       run: make
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: documents
+        path: documents/*.pdf
