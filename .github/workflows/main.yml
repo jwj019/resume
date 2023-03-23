@@ -12,9 +12,7 @@ jobs:
 
     steps:
     - name: Set up TeXLive
-      uses: dante-ev/setup-texlive@v2
-      with:
-        texlive-version: '2021'
+      uses: paolobrasolin/setup-texlive-action@v1
 
     - name: Checkout code
       uses: actions/checkout@v2
