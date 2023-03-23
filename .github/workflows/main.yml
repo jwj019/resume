@@ -13,6 +13,9 @@ jobs:
     steps:
     - name: Set up TeXLive
       uses: teatimeguest/setup-texlive-action@v2
+      with:
+        packages: >-
+          fontawesome5
     - name: Check `tlmgr` version
       run: tlmgr --version
     - name: Install deps
