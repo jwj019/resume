@@ -12,10 +12,10 @@ jobs:
 
     steps:
     - name: Set up TeXLive
-      uses: paolobrasolin/setup-texlive-action@v1
-
+      uses: teatimeguest/setup-texlive-action@v2
+    - name: Check `tlmgr` version
+      run: tlmgr --version
     - name: Checkout code
       uses: actions/checkout@v2
-
     - name: Build LaTeX document
       run: make
