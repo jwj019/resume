@@ -16,7 +16,7 @@ jobs:
     - name: Check `tlmgr` version
       run: tlmgr --version
     - name: Install deps
-      run: apt-get install texlive-xetex
+      run: sudo apt-get install texlive-xetex
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Build LaTeX document
