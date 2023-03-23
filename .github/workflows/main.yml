@@ -1,0 +1,22 @@
+name: Build LaTeX document
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-latex:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Set up TeXLive
+      uses: dante-ev/setup-texlive@v2
+      with:
+        texlive-version: '2021'
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Build LaTeX document
+      run: make
