@@ -7,20 +7,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-latex:
+  build:
     runs-on: ubuntu-latest
+    container: texlive/texlive:latest
 
     steps:
-    - name: Set up TeXLive
-      uses: teatimeguest/setup-texlive-action@v2
-      with:
-        packages: >-
-          fontawesome5
-    - name: Check `tlmgr` version
-      run: tlmgr --version
-    - name: Install deps
-      run: sudo apt-get install texlive-xetex
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Build LaTeX document
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Compile
       run: make
